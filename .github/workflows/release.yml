@@ -31,5 +31,5 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           yarn install --frozen-lockfile
-          yarn build
+          # yarn build # Only needed if your project is node based
           npx auto shipit
